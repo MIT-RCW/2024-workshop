@@ -18,6 +18,7 @@
         .caret-rotate {
             transition: transform 0.3s ease-in-out;
         }
+
         .collapse.show .caret-rotate {
             transform: rotate(180deg);
         }
@@ -75,8 +76,7 @@
                 <div class="m-4 m-lg-5">
                     <img src="assets/rcw_logo.png" width=300 class="d-inline-block align-text-middle" alt="">
                     <h1 class="display-4 fw-bold">MIT Robotics & Climate Workshop</h1>
-                    <!-- <h1 class="display-6 fw-bold">May 7th, 2024 in the Patil/Kiva Seminar Room (32-G449)</h1> -->
-                    <h2 class="display-9 ">May 7th, 2024 (8am-4pm)</h2>
+                    <h2 class="display-9 ">May 7th, 2024 (8AM-4PM)</h2>
                     <h2 class="display-9 ">MIT Patil/Kiva Seminar Room (32-G449)</h2>
                     <p class="fs-5">The MIT Robotics & Climate Workshop will be convening local
                         members from the robotics, climate, and sustainability communities for a day of
@@ -290,77 +290,55 @@
         <hr />
         <div class="row">
             <div class="column"></div>
-            <div class="container col-6 d-flex px-lg-5">
+            <div class="container col-8 px-lg-5 d-flex justify-content-center">
                 <div class="col-12">
-                    <table class="table table-striped">
+                    <table class="table table-responsive">
                         <thead class="thead-light">
                             <tr>
-                                <th>Time </th>
-                                <th>Activity</th>
+                                <th style="width: 25%;">Time</th>
+                                <th style="width: 75%;">Activity</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <th>8:30 AM</th>
-                                <th>Check In</th>
+                            <tr class="session-ii">
+                                <td>8:00 AM</td>
+                                <td>Check In Opens</td>
                             </tr>
-                            <tr>
-                                <td>9:00 AM</td>
-                                <td rowspan="2">Keynote I: Prof. Christoph Reinhart</td>
+                            <tr class="session-i">
+                                <td>9:00 AM - 10:00 AM</td>
+                                <td>Keynote: Prof. Christoph Reinhart</td>
                             </tr>
-                            <tr>
-                                <td>9:30 AM</td>
-                            </tr>
-                            <tr>
-                                <td>10:00 AM</td>
+                            <tr class="session-i">
+                                <td>10:00 AM - 10:10 AM</td>
                                 <td>Break</td>
                             </tr>
-                            <tr>
-                                <td>10:10 AM</td>
-                                <td>Panel I: The Built Environment</td>
+                            <tr class="session-i">
+                                <td>10:10 AM - 10:40 AM</td>
+                                <td>Panel: The Built Environment</td>
                             </tr>
-                            <tr>
-                                <td>10:50 AM</td>
+                            <tr class="session-ii">
+                                <td>11:00 AM - 12:00 PM</td>
+                                <td>Keynote: Prof. Abigail Bodner</td>
+                            </tr>
+                            <tr class="session-ii">
+                                <td>12:00 PM - 1:10 PM</td>
+                                <td>Lunch and Chat</td>
+                            </tr>
+                            <tr class="session-ii">
+                                <td>1:00 PM - 1:40 PM</td>
+                                <td>Panel: Climate Science</td>
+                            </tr>
+                            <tr class="session-i">
+                                <td>1:40 PM - 2:00 PM</td>
                                 <td>Break</td>
                             </tr>
-                            <tr>
-                                <td>11:00 AM</td>
-                                <td rowspan="2">Keynote II: Prof. Abigail Bodner</td>
+                            <tr class="session-i">
+                                <td>2:00 PM - 3:30 PM</td>
+                                <td>Whitepaper Session</td>
                             </tr>
-                            <tr>
-                                <td>11:30 AM</td>
-                            </tr>
-                            <tr>
-                                <td>12:00 PM</td>
-                                <td rowspan="2">Lunch</td>
-                            </tr>
-                            <tr>
-                                <td>12:30 PM</td>
-                            </tr>
-                            <tr>
-                                <td>1:00 PM</td>
-                                <td>Panel II: Climate Science</td>
-                            </tr>
-                            <tr>
-                                <td>1:40 PM</td>
-                                <td>Break</td>
-                            </tr>
-                            <tr>
-                                <td>2:00 PM</td>
-                                <td rowspan="3">Whitepaper Session</td>
-                            </tr>
-                            <tr>
-                                <td>2:30 PM</td>
-                            </tr>
-                            <tr>
-                                <td>3:00 PM</td>
-                            </tr>
-                            <tr>
-                                <td>3:30 PM</td>
-                                <td rowspan="2">Closing Remarks</td>
-                            </tr>
-                            <tr>
-                                <td>4:00 PM</td>
+                            <tr class="session-ii">
+                                <td>3:30 PM - 4:00 PM</td>
+                                <td>Closing Remarks</td>
                             </tr>
                         </tbody>
                     </table>
@@ -370,11 +348,36 @@
         </div>
     </section>
 
+
+    <style>
+        /* Color for table header */
+        .table thead th {
+            background-color: #1976D2;
+            /* Blue 700 */
+            color: #FFFFFF;
+            /* Text color */
+        }
+
+        .table tr,
+        .table th,
+        .table td {
+            border: none;
+            vertical-align: middle;
+        }
+
+        /* common color (material design scheme) for session I and II */
+        .session-i {
+            background-color: #E3F2FD;
+            /* Blue 100 */
+        }
+    </style>
+
+
     <!-- Organizers -->
     <section class="pt-4">
         <hr />
         <h2 class="text-center">Organizers</h2>
-        <h5 class="text-muted text-center">(by last names)</h5>
+        <h5 class="text-muted text-center">(by last name)</h5>
         <hr />
         <div class="row">
             <div class="column"></div>

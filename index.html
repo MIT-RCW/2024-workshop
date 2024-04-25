@@ -51,7 +51,7 @@
 
 <body>
     <!-- Responsive navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container px-lg-5">
             <a class="navbar-brand" href="#!">
                 <img src="assets/rcw_logo.png" width="30" class="d-inline-block align-text-middle" alt="">
@@ -61,16 +61,19 @@
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <!-- ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Contact</a></li>
-                    </ul -->
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#speakers">Speakers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#schedule">Schedule</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="#white-paper">White Paper</a></li> -->
+                    <li class="nav-item"><a class="nav-link" href="#sponsors">Sponsors</a></li>
+                </ul>
             </div>
         </div>
     </nav>
+
     <!-- Header-->
-    <header class="py-5 landingpic">
+    <header id="home" class="py-5 landingpic">
         <div class="container px-lg-5">
             <div class="p-4 p-lg-5 bg-light bg-opacity-75 rounded-3 text-center">
                 <div class="m-4 m-lg-5">
@@ -88,12 +91,13 @@
         </div>
     </header>
 
-    <!-- Section for Workshop Structure and White Paper -->
-    <!-- <section class="container pt-4">
-        <div class="card border-0">
-            <hr />
-            <h2 class="text-center">Workshop Structure</h2>
-            <hr />
+
+    <!-- Section for Workshop Structure -->
+    <section class="pt-4" id="workshop-structure">
+        <hr />
+        <h2 class="text-center">Workshop Structure</h2>
+        <hr />
+        <div class="container px-lg-5">
             <p class="fs-5">
                 The MIT Robotics & Climate Workshop will be a full-day event, with
                 three distinct sessions.
@@ -108,42 +112,18 @@
             </p>
 
             <p class="fs-5">
-                The day will conclude with a whitepaper brainstorming section,
+                The day will conclude with a white paper brainstorming session,
                 where participants will engage in teams to discuss future
                 climate-focused robotics research. The ideas generated during
-                this session will be used to inform the development of a
-                white paper which will be a longer-term output of the workshop.
-            </p>
-
-            <hr />
-            <h2 class="text-center">White Paper Details</h2>
-            <hr />
-            <p class="fs-5">
-                Involvement in the white paper brainstorming session is not a
-                requirement for participation in the workshop. Similarly, you
-                can (and should) participate in the white paper session even if
-                you do not desire to be involved in the future writing of the
-                paper.
-            </p>
-            <p class="fs-5">
-                We anticipate the white paper will be a collaborative effort,
-                which will take several months and will extend well beyond the
-                local community of workshop participants. The white paper will
-                attempt a comprehensive coverage of possible outlets for
-                climate-relevant robotics research.
-            </p>
-            <p class="fs-5">
-                In advance of the workshop we will clearly outline formal
-                authorship expectations on the final white paper. We anticipate
-                that authorship criteria will be based on contribution to the
-                research, writing, and editing of the paper after the workshop.
+                this session will inform the development of a white paper which
+                will be a longer-term output of the workshop.
             </p>
         </div>
-    </section> -->
+    </section>
 
 
     <!-- Speakers-->
-    <section class="pt-4">
+    <section class="pt-4" id="speakers">
         <hr />
         <h2 class="text-center">Keynote Speakers</h2>
         <hr />
@@ -239,7 +219,7 @@
     </section>
 
     <!-- Built Environment Panel -->
-    <section class="pt-4">
+    <section class="pt-4" id="built-environment-panel">
         <hr />
         <h2 class="text-center">Panel 1: The Built Environment</h2>
         <hr />
@@ -291,7 +271,7 @@
     </section>
 
     <!-- Climate Science Panel -->
-    <section class="pt-4">
+    <section class="pt-4" id="climate-science-panel">
         <hr />
         <h2 class="text-center">Panel 2: Climate Science</h2>
         <hr />
@@ -341,7 +321,7 @@
     </section>
 
     <!-- Schedule -->
-    <section class="pt-4">
+    <section class="pt-4" id="schedule">
         <hr />
         <h2 class="text-center">Schedule</h2>
         <hr />
@@ -391,7 +371,7 @@
                             </tr>
                             <tr class="session-i">
                                 <td>2:00 PM - 3:30 PM</td>
-                                <td>Whitepaper Session</td>
+                                <td>White Paper Session</td>
                             </tr>
                             <tr class="session-ii">
                                 <td>3:30 PM - 4:00 PM</td>
@@ -427,6 +407,34 @@
         }
     </style>
 
+    <!-- Section for White Paper Details -->
+    <!-- <section class="pt-4" id="white-paper">
+        <hr />
+        <h2 class="text-center">White Paper Details</h2>
+        <hr />
+        <div class="container px-lg-5">
+            <p class="fs-5">
+                Involvement in the white paper brainstorming session is not a
+                requirement for participation in the workshop. Similarly, you
+                can (and should) participate in the white paper session even if
+                you do not desire to be involved in the future writing of the
+                paper.
+            </p>
+            <p class="fs-5">
+                We anticipate the white paper will be a collaborative effort,
+                which will take several months and will extend beyond the
+                local community of workshop participants. The white paper will
+                attempt a comprehensive coverage of possible outlets for
+                climate-relevant robotics research.
+            </p>
+            <p class="fs-5">
+                In advance of the workshop we will clearly outline formal
+                authorship expectations on the final white paper. We anticipate
+                that authorship criteria will be based on contribution to the
+                research, writing, and editing of the paper after the workshop.
+            </p>
+        </div>
+    </section> -->
 
     <!-- Organizers -->
     <section class="pt-4">
@@ -535,9 +543,11 @@
     </section>
 
     <!-- Sponsors -->
-    <section class="pt-4">
+    <section class="pt-4" id="sponsors">
+        <hr />
+        <h2 class="text-center">Sponsors</h2>
+        <hr />
         <div class="container px-lg-5">
-            <h2> Sponsors </h2>
             <div class="card-group">
                 <div class="card border-0" style="width: 18rem;">
                     <img class="mx-auto my-auto" width="100%" src="assets/mit_aeroastro_logo.png" alt="MIT AeroAstro">
@@ -549,6 +559,10 @@
                 <div class="card border-0" style="width: 18rem;">
                     <img class="mx-auto my-auto" width="100%" src="assets/mit_office_of_sus.svg"
                         alt="MIT Office of Sustainability">
+                </div>
+                <div class="card border-0" style="width: 18rem;">
+                    <img class="mx-auto my-auto" width="100%" src="assets/mit_coe_logo.png"
+                        alt="MIT Center for Ocean Engineering">
                 </div>
             </div>
         </div>
